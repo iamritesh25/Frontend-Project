@@ -1,0 +1,117 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Mall Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mall-map-container">
+        <!-- Header -->
+        <header class="map-header">
+            <h1>Mall Map Navigator</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for stores..." class="form-control search-input">
+                <button id="clearSearch" class="btn btn--secondary btn--sm">Clear</button>
+            </div>
+        </header>
+
+        <!-- Controls Panel -->
+        <div class="controls-panel">
+            <!-- Floor Navigation -->
+            <div class="floor-controls">
+                <h3>Floor Navigation</h3>
+                <div class="floor-buttons">
+                    <button class="btn btn--outline floor-btn active" data-floor="ground">Ground Floor</button>
+                    <button class="btn btn--outline floor-btn" data-floor="first">First Floor</button>
+                    <button class="btn btn--outline floor-btn" data-floor="second">Second Floor</button>
+                </div>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="category-controls">
+                <h3>Store Categories</h3>
+                <div class="category-buttons">
+                    <button class="btn btn--secondary category-btn active" data-category="All">All</button>
+                    <button class="btn btn--secondary category-btn" data-category="Fashion">Fashion</button>
+                    <button class="btn btn--secondary category-btn" data-category="Electronics">Electronics</button>
+                    <button class="btn btn--secondary category-btn" data-category="Food & Dining">Food & Dining</button>
+                    <button class="btn btn--secondary category-btn" data-category="Entertainment">Entertainment</button>
+                    <button class="btn btn--secondary category-btn" data-category="Health & Beauty">Health & Beauty</button>
+                    <button class="btn btn--secondary category-btn" data-category="Home & Lifestyle">Home & Lifestyle</button>
+                </div>
+            </div>
+
+            <!-- Zoom Controls -->
+            <div class="zoom-controls">
+                <h3>Zoom</h3>
+                <div class="zoom-buttons">
+                    <button id="zoomIn" class="btn btn--primary btn--sm">+</button>
+                    <button id="zoomOut" class="btn btn--primary btn--sm">-</button>
+                    <button id="resetView" class="btn btn--outline btn--sm">Reset View</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Container -->
+        <div class="map-wrapper">
+            <div class="map-container" id="mapContainer">
+                <div class="map-content" id="mapContent">
+                    <!-- Stores will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Store Information Modal -->
+        <div class="modal hidden" id="storeModal">
+            <div class="modal-backdrop" id="modalBackdrop"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modalStoreName"></h2>
+                    <button class="modal-close" id="modalClose">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="store-info">
+                        <div class="store-logo">
+                            <div class="logo-placeholder" id="modalStoreLogo"></div>
+                        </div>
+                        <div class="store-details">
+                            <div class="detail-item">
+                                <strong>Category:</strong>
+                                <span id="modalStoreCategory"></span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Description:</strong>
+                                <p id="modalStoreDescription"></p>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Floor:</strong>
+                                <span id="modalStoreFloor"></span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Phone:</strong>
+                                <span id="modalStorePhone"></span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Hours:</strong>
+                                <span id="modalStoreHours"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="btn btn--primary" id="getDirections">Get Directions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading State -->
+        <div class="loading hidden" id="loadingState">
+            <div class="loading-spinner"></div>
+            <p>Loading floor plan...</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
