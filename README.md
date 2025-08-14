@@ -1,4 +1,4 @@
-# Interactive Mall Map Interface
+# "MallMate" an Interactive Mall Map Interface.
 
 An interactive, multi-floor mall navigation system with a modern UI, built to help visitors easily find stores and explore shopping centers.  
 
