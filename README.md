@@ -3,9 +3,9 @@
 An interactive, multi-floor mall navigation system with a modern UI, built to help visitors easily find stores and explore shopping centers.  
 
 ## Features
-- Interactive Map – Clickable store locations, hover highlights, zoom-in/out with smooth animations.  
+- Interactive Map – Clickable store locations, hover highlights.  
 - Search & Filter – Real-time search by store name, category filtering (Food, Clothing, Electronics, Entertainment, etc.).  
-- Store Information Popup – Displays store details: name, description, floor, contact, hours, and logos/images.  
+- Store Information Popup – Displays store details: name, description, floor, and logos/images.  
 - Floor Navigation – Switch between multiple floors with animated transitions.  
 - Category Colors/Icons – Easy visual identification of store types.  
 
@@ -16,3 +16,5 @@ An interactive, multi-floor mall navigation system with a modern UI, built to he
 
 ## Purpose
 Perfect for malls, exhibitions, or large commercial spaces to provide visitors a digital, interactive directory experience similar to modern mall kiosk systems.
+
+## Logos are Available inside the zip file.
