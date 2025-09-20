@@ -18,3 +18,6 @@ An interactive, multi-floor mall navigation system with a modern UI, built to he
 Perfect for malls, exhibitions, or large commercial spaces to provide visitors a digital, interactive directory experience similar to modern mall kiosk systems.
 
 ## Logos are Available inside the zip file.
+
+## NOTE:-
+ -Learning & Implementing "react" on this Project.
