@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiosk based MallMap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MALLMATE</h1>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search stores...">
+      <button id="clearSearch">Clear</button>
+    </div>
+  </header>
+
+  <div class="controls">
+    <button class="btn floor-btn active" data-floor="ground">Ground Floor</button>
+    <button class="btn floor-btn" data-floor="first">First Floor</button>
+  </div>
+
+  <div class="controls">
+    <button class="btn category-btn active" data-category="All">All</button>
+    <button class="btn category-btn" data-category="Fashion">Fashion</button>
+    <button class="btn category-btn" data-category="Electronics">Electronics</button>
+    <button class="btn category-btn" data-category="Food & Dining">Food & Dining</button>
+    <button class="btn category-btn" data-category="Entertainment">Entertainment</button>
+    <button class="btn category-btn" data-category="Health & Beauty">Health & Beauty</button>
+    <button class="btn category-btn" data-category="Home & Lifestyle">Home & Lifestyle</button>
+  </div>
+
+  <div class="map" id="mapContent"></div>
+
+  <div id="storeModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="modalClose" class="close">&times;</span>
+      <h2 id="modalStoreName"></h2>
+      <p><strong>Category:</strong> <span id="modalStoreCategory"></span></p>
+      <p id="modalStoreDescription"></p>
+      <p><strong>Address:</strong> <span id="modalStoreAddress"></span></p>
+      <div id="modalStoreOffers" class="offers"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <footer>
+    <div class="footer-content">
+      <p><strong>Mall Address : </strong>Cyber Success , FC Road, Pune, Maharashtra - 411005.</p>
+      <p> About Us | Contact Us | Terms & Conditions </p>
+      <p>&copy; 2025 MallMate. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
