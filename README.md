@@ -20,5 +20,6 @@ Perfect for malls, exhibitions, or large commercial spaces to provide visitors a
 ## Learning & Implementing "react" on this Project.
 
 ## NOTE:-
- -Logos are Available inside the zip file
+ -Logos are Available inside the zip file.
+ 
  -Execute (index.html | style.css | script.js) Available in the Repository.
